@@ -1,21 +1,21 @@
-const colorSpans = document.querySelectorAll('.product-color span');
+const colorSquars = document.querySelectorAll('.product-color span');
 const buyButton = document.querySelector('.product-footer__button');
-const popover = document.createElement('div');
+const card = document.createElement('div');
 
-colorSpans.forEach((span) => {
+colorSquars.forEach((span) => {
   span.addEventListener('click', () => {
-    colorSpans.forEach((s) => s.classList.remove('selected'));
+    colorSquars.forEach((s) => s.classList.remove('selected'));
     span.classList.add('selected');
     buyButton.removeAttribute('disabled');
   });
 });
 
 buyButton.addEventListener('click', () => {
-  popover.textContent = 'Product added to cart!';
-  popover.className = 'popover';
-  document.body.appendChild(popover);
+  card.textContent = 'Product added to cart';
+  card.className = 'added-to-cart';
+  document.body.appendChild(card);
 
   setTimeout(() => {
-    popover.remove();
-  }, 2000);
+    card.remove();
+  }, 1500);
 });
