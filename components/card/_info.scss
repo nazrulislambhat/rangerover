@@ -1,17 +1,17 @@
 @import '../../assets/styles/variables';
 .product-info {
-  padding: 0px 10px;
+  padding: 0rem 0.625rem;
   &__name {
     font-size: 1rem;
     font-family: $open-sans;
     color: $black-color;
-    padding: 8px 0px 12px 0px;
+    padding: 0.5rem 0rem 0.75rem 0rem;
   }
   &__year,
   &__size,
   &__engine {
     color: $black-color;
     font-family: $open-sans;
-    padding-bottom: 10px;
+    padding-bottom: 0.75rem;
   }
 }

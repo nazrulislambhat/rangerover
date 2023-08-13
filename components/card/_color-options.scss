@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 10px;
-  margin: 18px 10px 18px 10px;
+  gap: 0.625rem;
+  margin: 1.125rem 0.625rem 1.125rem 0.625rem;
   span {
     position: relative;
-    width: 44px;
-    height: 42px;
+    width: 2.75rem;
+    height: 2.625rem;
     cursor: pointer;
     border-radius: 5px;
   }
@@ -45,11 +45,10 @@
 
 .selected {
   position: relative;
-  border: 1.2px solid #333;
-  padding: 10px 20px;
+  border: 1.2px solid $black-color;
   display: inline-block;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   &::after {
     content: '✔️';

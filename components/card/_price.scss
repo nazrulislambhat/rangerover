@@ -1,11 +1,11 @@
 @import '../../assets/styles/variables';
 .product-price {
-  padding: 0px 10px;
+  padding: 0rem 0.75rem;
   &__title {
     font-size: 1rem;
     font-family: $open-sans;
     color: $black-color;
-    padding: 10px 0px 16px 0px;
+    padding: 0.75rem 0rem 1rem 0rem;
   }
   &__amount {
     color: $black-color;
@@ -15,7 +15,7 @@
     font-weight: 500;
     span {
       color: $black-color;
-      padding-right: 6px;
+      padding-right: 0.375rem;
     }
   }
 }
