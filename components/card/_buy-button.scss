@@ -1,0 +1,44 @@
+@import '../../assets/styles/variables';
+
+.product-footer {
+  background-color: $green-color;
+  background-image: url('../../assets//images/houdstooth-primary-secondary-teal.png');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 18px 5px;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+
+  &__button {
+    background-color: $button-color;
+    border-radius: 2rem;
+    position: relative;
+    padding: 12px 70px;
+    color: var(--color-white);
+    box-shadow: rgba(0, 0, 0, 0.5) 0.95px 0.95px 2px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    border: none;
+    &:disabled {
+      background-color: $grey-color;
+      color: $white-color;
+      cursor: not-allowed;
+    }
+  }
+}
+.popover {
+  position: absolute;
+  left: 43%;
+  bottom: 5%;
+  background-color: $grey-color;
+  color: $black-color;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: $open-sans;
+}

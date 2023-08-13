@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans.ttf") format("truetype");
+}
+.product-image {
+  max-width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 130px;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans.ttf") format("truetype");
+}
+.product-info {
+  padding: 0px 10px;
+}
+.product-info__name {
+  font-size: 1rem;
+  font-family: "OpenSans";
+  color: #282c30;
+  padding: 8px 0px 12px 0px;
+}
+.product-info__year, .product-info__size, .product-info__engine {
+  color: #282c30;
+  font-family: "OpenSans";
+  padding-bottom: 10px;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans.ttf") format("truetype");
+}
+.product-price {
+  padding: 0px 10px;
+}
+.product-price__title {
+  font-size: 1rem;
+  font-family: "OpenSans";
+  color: #282c30;
+  padding: 10px 0px 16px 0px;
+}
+.product-price__amount {
+  color: #282c30;
+  font-size: 1.5rem;
+  color: #03a696;
+  font-family: "OpenSans";
+  font-weight: 500;
+}
+.product-price__amount span {
+  color: #282c30;
+  padding-right: 6px;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans.ttf") format("truetype");
+}
+.product-color {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 18px 10px 18px 10px;
+}
+.product-color span {
+  position: relative;
+  width: 44px;
+  height: 42px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.product-color__white {
+  background: linear-gradient(-45deg, #c7c7c7 50%, rgba(242, 242, 242, 0.8) 50%);
+}
+.product-color__blue {
+  background: linear-gradient(-45deg, #049dbf 50%, rgba(4, 157, 191, 0.8) 50%);
+}
+.product-color__black {
+  background: linear-gradient(-45deg, #282c30 50%, rgba(40, 44, 48, 0.8) 50%);
+}
+.product-color__red {
+  background: linear-gradient(-45deg, #f24150 50%, rgba(242, 65, 80, 0.8) 50%);
+}
+
+.selected {
+  position: relative;
+  border: 1.2px solid #333;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+.selected::after {
+  content: "✔️";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  font-size: 1rem;
+  fill: #333;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans.ttf") format("truetype");
+}
+.product-footer {
+  background-color: #03a696;
+  background-image: url("../../assets//images/houdstooth-primary-secondary-teal.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 18px 5px;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.product-footer__button {
+  background-color: #ec018c;
+  border-radius: 2rem;
+  position: relative;
+  padding: 12px 70px;
+  color: var(--color-white);
+  box-shadow: rgba(0, 0, 0, 0.5) 0.95px 0.95px 2px;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.product-footer__button:disabled {
+  background-color: #c7c7c7;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+.popover {
+  position: absolute;
+  left: 43%;
+  bottom: 5%;
+  background-color: #c7c7c7;
+  color: #282c30;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "OpenSans";
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans.ttf") format("truetype");
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  align-content: center;
+  margin: 5rem auto;
+  max-width: 220px;
+}
+.product .product-footer {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  max-width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: white;
+}

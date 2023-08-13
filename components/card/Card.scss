@@ -1,0 +1,22 @@
+@import '_image';
+@import '_info';
+@import '_price';
+@import '_color-options';
+@import '_buy-button';
+@import '../../assets/styles/variables';
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  align-content: center;
+  margin: 5rem auto;
+  max-width: 220px;
+  .product-footer {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    max-width: 100%;
+  }
+}

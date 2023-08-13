@@ -1,0 +1,21 @@
+@import '../../assets/styles/variables';
+.product-price {
+  padding: 0px 10px;
+  &__title {
+    font-size: 1rem;
+    font-family: $open-sans;
+    color: $black-color;
+    padding: 10px 0px 16px 0px;
+  }
+  &__amount {
+    color: $black-color;
+    font-size: 1.5rem;
+    color: $green-color;
+    font-family: $open-sans;
+    font-weight: 500;
+    span {
+      color: $black-color;
+      padding-right: 6px;
+    }
+  }
+}

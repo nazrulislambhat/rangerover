@@ -1,0 +1,64 @@
+@import '../../assets/styles/variables';
+
+.product-color {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 18px 10px 18px 10px;
+  span {
+    position: relative;
+    width: 44px;
+    height: 42px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  &__white {
+    background: linear-gradient(
+      -45deg,
+      $grey-color 50%,
+      (rgba(242, 242, 242, 0.8)) 50%
+    );
+  }
+  &__blue {
+    background: linear-gradient(
+      -45deg,
+      $blue-color 50%,
+      (rgba(4, 157, 191, 0.8)) 50%
+    );
+  }
+  &__black {
+    background: linear-gradient(
+      -45deg,
+      $black-color 50%,
+      (rgba(40, 44, 48, 0.8)) 50%
+    );
+  }
+  &__red {
+    background: linear-gradient(
+      -45deg,
+      $red-color 50%,
+      (rgba(242, 65, 80, 0.8)) 50%
+    );
+  }
+}
+
+.selected {
+  position: relative;
+  border: 1.2px solid #333;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  &::after {
+    content: '✔️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-size: 1rem;
+    fill: #333;
+  }
+}
